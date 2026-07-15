@@ -1,3 +1,10 @@
 fn main() {
-    println!("Hello, world!");
+    enum ScanType {
+        Tcp,
+        Udp,
+        Syn,
+    }
+    enum OutputFormat {
+        
+    }
 }
