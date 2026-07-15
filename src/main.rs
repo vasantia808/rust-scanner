@@ -4,7 +4,10 @@ fn main() {
         Udp,
         Syn,
     }
+    
     enum OutputFormat {
-        
+        Json,
+        Csv,
+        PlainText,
     }
 }
