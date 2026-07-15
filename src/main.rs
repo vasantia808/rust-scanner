@@ -24,6 +24,24 @@ struct Config {
     target_name: Option<String>,
 }
 
+impl Config {
+    fn new(target: String) -> Config {
+        Config {
+            target,
+            start_port: 1,
+            end_port: 65535,
+            scan_type: ScanType::Tcp,
+            output_format: OutputFormat::PlainText,
+            output_file: None,
+            timeout_ms: 1000,
+            max_concurrent: 1000,
+            verbose: false,
+            notes: None,
+            target_name: None,
+        }
+    }
+}
+
 fn main() {
    
 }
